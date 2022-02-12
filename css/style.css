@@ -1,0 +1,403 @@
+*{
+ margin:  0 auto;
+ padding: 0;
+ box-sizing: border-box;
+}
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+   
+}
+.app{
+   background-image: url(../img/main/bg-app.png);
+    padding-bottom: 60px;
+}
+.slider{
+}
+.header{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    transition: all ease 0.5s;
+}
+.header__Navbar{
+height: auto;
+
+}
+.header__Navbar .nav-link{
+ font-weight: 500;
+ font-size: 18px;
+ line-height: 28px;
+ background-color: transparent;
+ 
+}
+.header_logo_img{
+    height: 100%;
+    width: 245px;
+    transition: all ease 0.5s;
+
+}
+.header_login{
+    width: 100px;
+    cursor: pointer;
+}
+.header_login i{
+    margin-top: 4px;
+    font-size: 24px;
+    color: #fff;
+}
+.header_login p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+.navbar-expand .navbar-nav .nav-link {
+    padding: 8px 0;
+}
+.header_login p:hover,
+.SubNav a:hover,
+.header__Navbar .nav-link:hover{
+    color:rgb(252, 252, 173)!important;
+}
+.nav-item{
+    position: relative;
+    white-space: nowrap;
+}
+.header__Navbar .page_active  .nav-link::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 3px solid rgb(255, 112, 7);
+    display: none;
+}
+.header__Navbar .page_active .nav-link::after{
+    display: block;
+}
+.Navbar-SubNav{
+ position: relative;
+}
+.SubNav{
+    position: absolute;
+    left: 0;
+    display: none;
+}
+.Navbar-SubNav:hover .SubNav{
+    display: block;
+}
+.pagehome{
+    /* display: none; */
+}
+
+
+.opposite{
+    height: 160px;
+    width: 1280px;
+    margin: 20px auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.opposite-items{
+    width: 170px;
+    display: block;
+}
+/* slick slider opposiite */
+.priv-btn{
+ position: absolute;
+top:48px;
+ left: 0;
+ z-index: 2;
+ cursor: pointer;
+}
+.next-btn{
+position: absolute;
+right: 0;
+top:48px;
+z-index: 2;
+cursor: pointer;
+}
+.MotorDetails .next-btn,
+.MotorDetails .priv-btn{
+ top:30px;
+ font-size: 20px;
+}
+.MotorDetails .next-btn img,
+.MotorDetails .priv-btn img{
+ width: 24px;
+}
+
+/* hoat Động */
+.actip{
+    max-width: 1300px;
+    padding: 0;
+}
+.heading_actip >h1{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+
+
+.Sub__heading_actip{
+    color: rgb(255, 112, 7);
+}
+.actip img:hover{
+    cursor: pointer;
+
+}
+/* MẠng xã hội */
+.Social{
+    width: 1000px;
+    height: 172px;
+    background-image: url(../img/footer/bg-mxh.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Social-__items{
+    margin: 10px;
+    font-size: 48px;
+    color: #000;
+    cursor: pointer;
+}
+/* footer */
+.footer{
+    height: auto;
+    background-image: url(../img/footer/bg-footer.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.footer p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.8rem;
+    margin: 0;
+    color:rgb(13, 8, 0) ;
+    cursor: pointer;
+  
+}
+@media screen and (max-width:1280px) {
+    .footer p{
+        font-size: 10px;
+    }
+}
+.footer-info h2{
+    font-size: 50px;
+    color: rgb(13, 8, 0);
+    font-weight: 600;
+}
+.footer h6{
+    margin: 24px 0;
+    font-weight: 700;
+    color: rgb(13, 8, 0);
+}
+.footer  i{
+    font-size: 12px;
+}
+/* page child */
+.pageChild{
+    margin: 0   ;
+    padding: 120px 50px;
+    height: auto ;
+    align-items: center;
+}
+.pageChild__header{
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Dich vụ */
+.Service__content{
+
+}
+.Service__item{
+}
+.Service__item img{
+    border-radius: 1px;
+    margin:0 20px ;
+    width: 250px;
+    float: left ;
+    
+}
+.Service__link:hover,
+.Service__link{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.Service__link h5:hover{
+ color: rgb(252, 252, 173);
+}
+.Service_info p{
+    margin: 0;
+    line-height: 1.6rem;
+    cursor: text;
+}
+/* contact form */
+.contactform input{
+    margin-bottom: 12px;
+}
+.Contact__content{
+    margin: 12px 100px;
+}
+.ContactSubmit{
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-size: 16px ow;
+    color:#fff ;
+    background-color: #fe6507;
+    border: none;
+    outline: none;
+    margin-top: 16px;
+ 
+}
+.ContactSubmit:hover {
+    color: #fff !important;
+    background: #f00 !important;
+}
+.Contact__content--info p{
+    margin: 0;
+  line-height: 1.8rem;  
+  font-size: 20px;
+}
+.Contact__content h4{
+    font-weight: 600;
+}
+/* Motor */
+.Motor{
+}
+.MotorDetails_Content,
+.Motor_Content{
+    max-width: 1280px;
+    margin: 0 auto;
+    height: auto;
+}
+.Motor_items_links:hover,
+.Motor_items_links{
+    text-decoration: none;
+    color: #fff;
+}
+.Motor_items_avatar{
+    min-width: 300px;
+    height: 225px;
+    overflow: hidden;
+ 
+}
+
+.Motor_items_img{
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%;
+}
+.Motor_items_img:hover{
+    transform: scale(1.1);
+    transition: all .7s;
+}
+.Motor_items_Name{
+    margin: 12px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+.Motor_items_id{
+    font-size: 16px;
+    font-weight: 500;
+}
+.Motor_items__price{
+    margin: 12px 0;
+    color: rgb(255, 255, 0);
+    font-weight: 600;
+}
+.Motor_items_Name:hover{
+    color: #Ff0;;
+}
+/* chi tiet motor .*/
+.MotorDetails_Image{
+
+}
+.showImage{
+    width: 450px;
+    height: 340px;
+
+}
+.showImage img{
+    width: 100%;
+    height: 100%;
+}
+.Motor_listImage{
+    width: 450px;
+    position: relative;
+}
+.image_Items{
+    width: 105px;
+    height: 80px;
+    margin: 4px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+}
+
+.image_Items img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+.MotorDetails_info{
+    width: 50%;
+}
+
+.MotorDetails_info_Name{
+ font-size: 24px;
+}
+
+.MotorDetails_info_id{
+
+}
+.MotorDetails_info_Price{
+    font-size: 20px;
+    color: rgb(245, 0, 0);
+    font-weight: 500;
+
+}
+.MotorDetails_info_Price span{
+    font-size: 15px;
+    margin-right: 20px;
+}
+.MotorDetails_info_pragrap{
+    font-size: 22px;
+    font-weight: 400;
+
+}
+table{
+    border-collapse: collapse;
+}
+td{
+    padding: 12px 0;
+    border-bottom: 1px solid #fff;
+}
+/* Modal */
+.modal-content{
+    position: relative;
+}
+
+
+.btn_thoatmodal {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    font-size: 18px;
+}
