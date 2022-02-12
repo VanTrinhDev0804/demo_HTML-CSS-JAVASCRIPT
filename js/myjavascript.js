@@ -234,7 +234,7 @@ $(document).ready( function(){
     
     function napDSMoTor(sp){
         
-       let ite = `<a id="Chitiet " class="Motor_items_links col-lg-6 col-xl-3 text-center" href="../html/ChitietMotor${sp.id_moto}.html"> 
+       let ite = `<a id="Chitiet " class="Motor_items_links col-lg-6 col-xl-3 text-center" href="../ChitietMotor${sp.id_moto}.html"> 
             <div class="Motor_items_avatar">
            <img class="Motor_items_img " src="${sp.image_motor}" alt="">
             </div>
